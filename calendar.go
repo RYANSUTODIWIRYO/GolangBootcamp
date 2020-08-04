@@ -7,6 +7,7 @@ import (
 
 func main()  {	
 	//gajadi yeeee
+	//buat tugas
 	
 	const tahun int = 2020
 	bulan := [12]string{"Januari", "Februari", "Maret", "April", "Mei", "Juni",
