@@ -6,9 +6,6 @@ import (
 )
 
 func main()  {	
-	//gajadi yeeee
-	//buat tugas
-	
 	const tahun int = 2020
 	bulan := [12]string{"Januari", "Februari", "Maret", "April", "Mei", "Juni",
 	"Juli", "Agustus", "September", "Oktober", "Nobvember", "Desember"}		//Inisialisasi bulan array
