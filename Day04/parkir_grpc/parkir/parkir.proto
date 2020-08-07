@@ -1,0 +1,29 @@
+syntax = "proto3";
+package parkir;
+
+message Empty {}
+
+message KarcisParkir {
+  string idKendaraan = 1;
+}
+
+message Keluar {
+    string jenisKendaraan = 1;
+    string platNomor = 2;
+    string idKendaraan = 3;
+}
+
+message StrukParkir {
+    string idKendaraan = 1;
+    string jenisKendaraan = 2;
+    string platNomor = 3;
+    string jamMasuk = 4;
+    string jamKeluar = 5;
+    int64 durasi = 6;
+    int64 totalTarif = 7;
+}
+
+service ParkirService {
+  rpc MasukParkir(Empty) returns (KarcisParkir) {}
+  rpc KeluarParkir(Keluar) returns (StrukParkir) {}
+}
